@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Button from './pages/Button';
@@ -10,7 +11,6 @@ function App() {
     <Route path="/Posts" component={<Posts/>} />
     <Route path="/Reflection" component={<Reflection/>} />
 </Router>
-  );
 }
 
 export default App;
