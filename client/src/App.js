@@ -1,16 +1,21 @@
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
 import Button from './pages/Button';
 import Posts from './pages/Posts';
 import Reflection from './pages/Reflection';
+
 function App() {
   return (
-    <Router>
-    <Route exact path="/" component={<Button />} />
-    <Route path="/Posts" component={<Posts/>} />
-    <Route path="/Reflection" component={<Reflection/>} />
-</Router>
+  <Router>
+    <Routes>
+      <Route path="/Button" element={<Button bg/>} />
+      <Route path="/Posts" element={<Posts/>} />
+      <Route path="/Reflection" element={<Reflection/>} />
+    </Routes>
+  </Router>
+  );
+  
 }
+
 
 export default App;
