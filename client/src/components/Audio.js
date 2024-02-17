@@ -16,10 +16,13 @@ function Audio({ play }) {
   const Type = (start) => {
     if (start === 'start') {
       audioRef.current.play();
-    } else {
-      //reset time to get data
-      audioRef.current.currentTime = 0;
-      audioRef.current.pause();
+    } else if(start == 'stop'){
+        audioRef.current.currentTime = 0;
+        audioRef.current.pause();
+    }
+    else{
+        audioRef.current.currentTime = 0;
+        audioRef.current.pause();
     }
   };
 
