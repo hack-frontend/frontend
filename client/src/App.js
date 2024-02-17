@@ -1,8 +1,11 @@
-import {Box} from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
+import Auth from "./Auth/Auth";
 
 function App() {
   return (
-    <Box>Hello</Box>
+    <Box>
+      <Auth />
+    </Box>
   );
 }
 
