@@ -4,13 +4,16 @@ import { useState } from "react";
 
 const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [posts, setPosts] = useState(null);
+  const [posts, setPosts] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const userContext = {
     user,
     posts,
+    isLoggedIn,
     setUser,
     setPosts,
+    setIsLoggedIn,
   };
 
   return (
