@@ -36,8 +36,8 @@ function BtnPage() {
         setTextAppear(false);
         setTimeout(() => {
           setTimerAppear(true);
-        }, 2000);
-      }, 2000);
+        }, 3000);
+      }, 3000);
     return () => {
       clearTimeout(timeout);
     };
@@ -59,7 +59,7 @@ function BtnPage() {
         color="white"
         fontSize="1.7rem"
       >
-        Close your eyes. Take some deep breathes and be present.
+        Close your eyes. Inhale deeply, exhale softly, and simply be present.
       </Text>
       <Timer timerAppear={timerAppear} />
     </Center>

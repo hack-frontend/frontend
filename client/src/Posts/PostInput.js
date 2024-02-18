@@ -22,7 +22,7 @@ export default function PostInput() {
   const dateToday = new Date(new Date().toDateString()).toISOString();
   const postCollectionRef = collection(db, "posts");
   const navigate = useNavigate();
-  console.log(user?.uid);
+
   const onSubmitPost = async (e) => {
     e.preventDefault();
     if (!text)

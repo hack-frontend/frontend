@@ -17,7 +17,7 @@ export default function Timer({ timerAppear }) {
   }, [timer, setTimer, timerAppear]);
   const minute = Math.floor(timer / 60);
   const seconds = timer % 60;
-  console.log(timerAppear);
+
   return (
     <Text
       transition="all 1s "
@@ -51,8 +51,8 @@ export default function Timer({ timerAppear }) {
         </Button>
       )}
       {timer > -1 && `${minute}:${seconds < 10 ? "0" + seconds : seconds}`}
-      {seconds < 60 && <Audio src={src} play="start" />}
-      {timer <= 0 && <Audio src={src} play="stop" />}
+      {timerAppear && <Audio src={src} play="start" />}
+      {seconds <= 0 && <Audio src={src} play="stop" />}
     </Text>
   );
 }
