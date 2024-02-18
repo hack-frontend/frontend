@@ -5,6 +5,7 @@ import { useContext } from "react";
 import UserContext from "../store/user-context";
 export default function Auth() {
   const userCtx = useContext(UserContext);
+
   const signInWithGoogle = async () => {
     try {
       const {
