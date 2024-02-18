@@ -3,7 +3,7 @@ import { Button, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import Audio from "./Audio";
 export default function Timer({ timerAppear }) {
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(60);
   const navigate = useNavigate();
   const music = "audio/1.mp3";
   const [src, setSrc] = useState(music);
@@ -51,7 +51,7 @@ export default function Timer({ timerAppear }) {
         </Button>
       )}
       {timer > -1 && `${minute}:${seconds < 10 ? "0" + seconds : seconds}`}
-      {seconds < 10 && <Audio src={src} play="start" />}
+      {seconds < 60 && <Audio src={src} play="start" />}
       {timer <= 0 && <Audio src={src} play="stop" />}
     </Text>
   );
