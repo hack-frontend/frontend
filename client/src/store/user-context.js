@@ -6,9 +6,11 @@ const UserContext = createContext({
     photoURL: "",
     uid: "",
   },
+  isLoggedIn: false,
   posts: [],
   setUser: (user) => {},
   setPosts: (posts) => {},
+  setIsLoggedIn: (bool) => {},
 });
 
 export default UserContext;
