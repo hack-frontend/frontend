@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import PostInput from "../Posts/PostInput";
 function Posts() {
   return (
-    <div>Posts</div>
-  )
+    <div>
+      <PostInput />
+    </div>
+  );
 }
 
-export default Posts
+export default Posts;
