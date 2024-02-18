@@ -59,7 +59,7 @@ function BtnPage() {
         color="white"
         fontSize="1.7rem"
       >
-        Close your eyes now. And be good to yourself.
+        Close your eyes. Take some deep breathes and be present.
       </Text>
       <Timer timerAppear={timerAppear} />
     </Center>
