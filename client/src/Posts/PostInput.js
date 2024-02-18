@@ -50,13 +50,13 @@ export default function PostInput() {
         isClosable: true,
       });
       setPosts((posts) => [
-        ...posts,
         {
           uid: user.uid,
           text,
           date: dateToday,
           name: user.name,
         },
+        ...posts,
       ]);
       setLoading(false);
       navigate("/allposts");
